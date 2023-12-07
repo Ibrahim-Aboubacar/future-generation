@@ -1,0 +1,10 @@
+{
+  "name": "future_generation",
+  "version": "1.0.0",
+  "requires": true,
+  "packages": {},
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/css.css -o ./public_html/assets/css/styles.css --watch",
+    "build": "npx tailwindcss -i ./src/css.css -o ./public_html/assets/css/styles.css --minify"
+  }
+}

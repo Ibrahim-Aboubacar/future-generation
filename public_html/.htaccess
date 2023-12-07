@@ -1,0 +1,11 @@
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+# ErrorDocument 500 erreeer
+
+# Activer le module de réécriture d'URL
+RewriteEngine On
+
+# Rediriger les requêtes de /page.php vers /page
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
