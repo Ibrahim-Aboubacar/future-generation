@@ -21,6 +21,7 @@ include_once "../includes/header.php";
         </div>
     </div>
 </section>
+
 <section class="py-40 bg-no-repeat bg-cover " style="background-image: url(<?= img("bg-1.jpg") ?>);">
     <div class="max-w-screen-xl mx-auto px-5 md:flex" id="section_welcome">
         <div class="w-full md:w-1/2 overflow-hidden flex flex-col justify-center rounded-md" id="div_image_buil">
@@ -50,10 +51,15 @@ include_once "../includes/header.php";
 <?php include "../includes/components/news-feed.php"; ?>
 <!-- END- NEWS FEED -->
 
+<hr class="border-t-2 border-gray-50">
+
+<!-- START- FIND US -->
+<?php include "../includes/components/comments.php"; ?>
+<!-- END- FIND US -->
+
 <!-- START- FIND US -->
 <?php include "../includes/components/find-us.php"; ?>
 <!-- END- FIND US -->
-
 
 <?php
 include_once "../includes/footer.php";

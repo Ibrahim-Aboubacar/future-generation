@@ -1,7 +1,7 @@
 <section class="bg-[#502a29] border-t border-b border-gray-300">
     <div class=" max-w-screen-xl mx-auto p-10">
-        <h3 class="text-gray-300 text-center text-2xl font-semibold mb-10">
-            Contactez-nous ou retrouvez-nous facilement<br class="inline-block md:hidden"> sur <span class="text-[#ffbb00]">Google Maps</span>.
+        <h3 class="text-gray-300 text-center text-xl md:text-2xl font-semibold mb-10">
+            Contactez-nous ou retrouvez-nous facilement sur <span class="text-[#ffbb00]">Google Maps</span>.
         </h3>
         <div class="flex flex-col md:flex-row  gap-5 justify-between items-center">
             <div class="w-full max-w-max md:w-1/2 px-2 md:px-5  mx-auto md:mx-0 mb-10 md:mb-0">

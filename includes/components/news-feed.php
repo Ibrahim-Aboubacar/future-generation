@@ -5,7 +5,7 @@
             <div class="swiper-wrapper flex gap-3_">
                 <?php for ($i = 0; $i < 15; $i++) : ?>
 
-                    <div class="card swiper-slide w-[200px]_ bg-gray-400 rounded-xl overflow-hidden">
+                    <div class="card swiper-slide w-[200px]_ bg-gray-50 rounded-xl overflow-hidden">
                         <div class="image-content relative ">
                             <!-- <span class="overlay absolute inset-0 bg-red-900/50 flex justify-center items-center"></span> -->
                             <span class="absolute bottom-0 left-0 rounded-md m-2 p-2 bg-[#502a29] text-gray-50">Matternelle</span>
@@ -16,9 +16,9 @@
 
                         <div class="card-content p-3">
                             <h2 class="name font-semibold text-lg ">kindergarden Students reading loader</h2>
-                            <p class="description font-light text-xs">The lorem text the section that contains header with having open functionality...</p>
+                            <p class="description font-light">The lorem text the section that contains header with having open functionality...</p>
 
-                            <button class="px-4 rounded mt-5 py-2 bg-[#502a29] text-gray-50">View More</button>
+                            <button class="px-4 rounded-md mt-5 py-2 bg-[#502a29] text-gray-50">View More</button>
                         </div>
                     </div>
 

@@ -3,7 +3,6 @@ $PAGE_NAME = "contact";
 include_once "../includes/header.php";
 ?>
 
-
 <!-- HERO SECTION -->
 <section>
     <div class="relative h-[500px] md:h-[700px]_ z-0 bg-no-repeat bg-cover bg-[90%_80%] md:bg-[100%_70%]" style="background-image: url(<?= img("bg-2.jpg") ?>);">
@@ -19,6 +18,7 @@ include_once "../includes/header.php";
         </div>
     </div>
 </section>
+
 <!-- LET'S START A CONVERSATION -->
 <section>
     <div class="max-w-screen-xl mx-auto flex flex-col px-5 md:pb-16">

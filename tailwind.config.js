@@ -5,8 +5,8 @@ module.exports = {
         extend: {
             keyframes: {
                 "wiggle-x": {
-                    "0%, 65%, 100%": { transform: "translateX(0px)" },
-                    "35%": { transform: "translateX(25px)" },
+                    "0%, 50%, 100%": { transform: "translateX(0px)" },
+                    "10%": { transform: "translateX(25px)" },
                 },
                 "wiggle-y": {
                     "0%, 65%, 100%": { transform: "translateY(0px)" },
@@ -14,7 +14,7 @@ module.exports = {
                 },
             },
             animation: {
-                "wiggle-x": "wiggle-x 2s ease-in-out infinite",
+                "wiggle-x": "wiggle-x 3s ease-in-out infinite",
                 "wiggle-y": "wiggle-y 2s ease-in-out infinite",
             },
         },
