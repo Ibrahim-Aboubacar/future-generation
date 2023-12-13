@@ -37,7 +37,7 @@
                 <?php for ($i = 0; $i < 2; $i++) : ?>
                     <div class="flex px-2 gap-4 mb-2">
                         <div class="w-1/3">
-                            <img class="max-w-full h-full object-contain" src="<?= img("elone-musk.jpg") ?>" alt="">
+                            <img class="max-w-full h-full object-contain" src="<?php echo img("elone-musk.jpg") ?>" alt="">
                         </div>
                         <div class="w-8/12 text-xs text-gray-400">
                             <p>

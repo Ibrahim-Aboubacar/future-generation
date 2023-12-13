@@ -1,17 +1,35 @@
 <?php
 include_once __DIR__ . "/constants.php";
+
+/**
+ * Generates the full URL for an image based on the provided path.
+ *
+ * @param string $path The path to the image file.
+ * @return string The complete URL of the image.
+ */
 function img(string $path): string
 {
     return SITE_BASE . IMG_PATH . $path;
 }
 
+/**
+ * Generates the full URL for a specific page based on its name.
+ *
+ * @param string $page_name The name of the page.
+ * @return string The complete URL of the page, or "#PAGE_NOT_FOUND" if the page is not found.
+ */
 function page(string $page_name): string
 {
     if (!isset(PAGES[$page_name])) return "#PAGE_NOT_FOUND";
     return SITE_BASE . PAGES[$page_name];
 }
 
-
+/**
+ * Generates HTML code for displaying a star rating.
+ *
+ * @param int $nbr The number of stars to display (default is 1).
+ * @return string HTML code representing the star rating.
+ */
 function stars(int $nbr = 1): string
 {
 
