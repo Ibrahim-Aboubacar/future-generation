@@ -10,7 +10,7 @@
                             <!-- <span class="overlay absolute inset-0 bg-red-900/50 flex justify-center items-center"></span> -->
                             <span class="absolute bottom-0 left-0 rounded-md m-2 p-2 bg-[#502a29] text-gray-50">Matternelle</span>
                             <div class="card-image">
-                                <img class="w-full h-full object-cover" src="<?= img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img">
+                                <img class="w-full h-full object-cover" src="<?php echo img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img">
                             </div>
                         </div>
 

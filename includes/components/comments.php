@@ -8,13 +8,13 @@
                 <?php for ($i = 0; $i < 6; $i++) : ?>
 
                     <div x-data="{
-                        likes: <?= rand(1, 150); ?>,
-                        liked: <?= rand(0, 1) ? 'true' : 'false' ?>
+                        likes: <?php echo rand(1, 150); ?>,
+                        liked: <?php echo rand(0, 1) ? 'true' : 'false' ?>
                     }" class="card swiper-slide bg-gray-50 rounded-xl overflow-hidden">
                         <div class="flex flex-col sm:flex-row p-5">
                             <div class="image-content w-full sm:w-2/5 flex-grow h-full">
                                 <div class="card-image">
-                                    <img class="w-full rounded-md h-full object-cover" src="<?= img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img">
+                                    <img class="w-full rounded-md h-full object-cover" src="<?php echo img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img">
                                 </div>
                             </div>
                             <div class="w-full sm:w-3/5 flex flex-col justify-center items-center_ p-5">
@@ -22,7 +22,7 @@
                                 <p class="text-gray-400 text-sm">Directeur Général Société Cotonnière de Guinée</p>
                                 <hr class="my-2 border-t border-gray-300">
                                 <div class="stars flex gap-1">
-                                    <?= stars(rand(1, 5)) ?>
+                                    <?php echo stars(rand(1, 5)) ?>
                                 </div>
                             </div>
                         </div>

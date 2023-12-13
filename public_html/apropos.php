@@ -5,7 +5,7 @@ include_once "../includes/header.php";
 
 <!-- HERO SECTION -->
 <section>
-    <div class="relative h-[700px] z-0 bg-no-repeat bg-cover bg-[50%_25%]" style="background-image: url(<?= img("bg-3.jpg") ?>);">
+    <div class="relative h-[700px] z-0 bg-no-repeat bg-cover bg-[50%_25%]" style="background-image: url(<?php echo img("bg-3.jpg") ?>);">
         <div id="heroSection" class="h-full inset-0 bg-[#502a29]/80 flex flex-col gap-10 justify-center items-center">
             <h1 class="text-3xl text-center md:text-5xl text-gray-200 flex justify-center items-center gap-4 drop-shadow-md">
                 <span class="write-text" data-speed="40" style="opacity: 0;">Qui sommes nous ?</span>
