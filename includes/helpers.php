@@ -4,6 +4,9 @@ include_once __DIR__ . "/constants.php";
 /**
  * Generates the full URL for an image based on the provided path.
  *
+ * This function takes a relative path to an image file and combines it with
+ * the base URL and image path constants to create the complete URL.
+ *
  * @param string $path The path to the image file.
  * @return string The complete URL of the image.
  */
