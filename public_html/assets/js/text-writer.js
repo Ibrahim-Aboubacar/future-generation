@@ -1,3 +1,4 @@
+let X_TIME_OUT = 0;
 function intTextWriter(parent = document) {
     const textToWrite = parent.querySelectorAll(".write-text");
 
@@ -16,7 +17,7 @@ async function writeText(el) {
     let delay = el.dataset.delay ?? textWriterDefaults.delay;
 
     // reinitialiser le text á vide
-    el.innerText = "";
+    el.innerHTML = "&nbsp;";
     el.style.opacity = 1;
 
     // wait if any delay
@@ -34,7 +35,8 @@ async function writeText(el) {
 }
 
 function wait(milliseconds) {
+    clearTimeout(X_TIME_OUT);
     return new Promise((resolve) => {
-        setTimeout(resolve, milliseconds);
+        X_TIME_OUT = setTimeout(resolve, milliseconds);
     });
 }

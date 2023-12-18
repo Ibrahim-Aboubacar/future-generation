@@ -101,14 +101,6 @@ include_once "../includes/header.php";
 <?php include "../includes/components/comments.php"; ?>
 <!-- END- FIND US -->
 
-
-
-
-
-
-
-
-
 <script src="assets/js/text-writer.js"></script>
 <script>
     window.onload = intTextWriter(document.getElementById("heroSection"))
@@ -117,7 +109,6 @@ include_once "../includes/header.php";
 <!-- START- FIND US -->
 <?php include "../includes/components/find-us.php"; ?>
 <!-- END- FIND US -->
-
 
 <?php
 include_once "../includes/footer.php";

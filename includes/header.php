@@ -4,6 +4,15 @@ if (!isset($PAGE_NAME)) $PAGE_NAME = "FUG";
 if (!isset($PAGE_CSS)) $PAGE_CSS = [];
 if (!isset($PAGE_JS)) $PAGE_JS = [];
 $SITE_NAME = "FUG";
+
+$ACTIVE_PAGE = [];
+foreach (PAGES as $name => $file) {
+    if ($name == $PAGE_NAME) {
+        $ACTIVE_PAGE[$name] = 'text-[#ffbb00] hover:text-[#ffbb00]';
+    } else {
+        $ACTIVE_PAGE[$name] = 'text-gray-200 hover:text-[#ffbb00]';
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +26,12 @@ $SITE_NAME = "FUG";
     } ?>
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-margin: 430px 50px;
+        }
+    </style>
     <script src="assets/js/alpine.js" defer></script>
     <title><?php echo strtoupper($PAGE_NAME) . " - " . strtoupper($SITE_NAME) ?></title>
 </head>
@@ -40,13 +55,13 @@ $SITE_NAME = "FUG";
 
             <ul class="hidden md:flex justify-end items-center gap-2 ">
                 <li class="">
-                    <a class="px-3 py-2 font-semibold text-gray-200 hover:underline transition-all hover:text-[#ffbb00a9]" href="<?php echo page('home') ?>">ACCUEIL</a>
+                    <a class="px-3 py-2 font-semibold  hover:underline transition-all text-gray-200_ hover:text-[#ffbb00a9]_ <?php echo $ACTIVE_PAGE['home'] ?>" href="<?php echo page('home') ?>">ACCUEIL</a>
                 </li>
                 <li class="">
-                    <a class="px-3 py-2 font-semibold text-gray-200 hover:underline transition-all hover:text-[#ffbb00a9]" href="<?php echo page('about') ?>">APROPOS</a>
+                    <a class="px-3 py-2 font-semibold  hover:underline transition-all text-gray-200_ hover:text-[#ffbb00a9]_ <?php echo $ACTIVE_PAGE['about'] ?>" href="<?php echo page('about') ?>">APROPOS</a>
                 </li>
                 <li class="relative">
-                    <div x-on:mouseover="showMtnl = true; clearTimeout(x)" x-on:mouseout="x = setTimeout(()=>{ showMtnl = false}, 300)" class="px-3 py-2 font-semibold text-gray-200 cursor-pointer hover:text-[#ffbb00a9]">
+                    <div x-on:mouseover="showMtnl = true; clearTimeout(x)" x-on:mouseout="x = setTimeout(()=>{ showMtnl = false}, 300)" class="px-3 py-2 font-semibold text-gray-200 cursor-pointer hover:text-[#ffbb00]">
                         MATERNELLE
                         <ul x-show="showMtnl" x-transition x-transition.duration.500ms class="absolute z-20 top-full flex flex-col gap-2 left-0 mt-3 bg-gray-100 text-[#502a29] rounded shadow p-3" style="display: none;">
                             <li><a class="px-3 w-full inline-block rounded-sm py-1 text-left hover:bg-pink-950/20 whitespace-nowrap transition-all" href="#">Primary</a></li>
@@ -60,13 +75,10 @@ $SITE_NAME = "FUG";
                     </div>
                 </li>
                 <li class="">
-                    <a class="px-3 py-2 font-semibold text-gray-200 hover:underline transition-all hover:text-[#ffbb00a9]" href="<?php echo page('gallery') ?>">GALLERY</a>
+                    <a class="px-3 py-2 font-semibold  hover:underline transition-all text-gray-200_ hover:text-[#ffbb00a9]_ <?php echo $ACTIVE_PAGE['gallery'] ?>" href="<?php echo page('gallery') ?>">GALLERY</a>
                 </li>
                 <li class="">
-                    <a class="px-3 py-2 font-semibold text-gray-200 hover:underline transition-all hover:text-[#ffbb00a9]" href="<?php echo page('admissions') ?>">ADMISSIONS</a>
-                </li>
-                <li class="">
-                    <a class="px-3 py-2  font-semibold text-gray-200 hover:underline transition-all hover:text-[#ffbb00a9]" href="<?php echo page('contact') ?>">CONTACT</a>
+                    <a class="px-3 py-2  font-semibold  hover:underline transition-all text-gray-200_ hover:text-[#ffbb00a9]_ <?php echo $ACTIVE_PAGE['contact'] ?>" href="<?php echo page('contact') ?>">CONTACT</a>
                 </li>
             </ul>
         </div>
