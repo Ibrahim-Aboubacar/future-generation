@@ -45,7 +45,9 @@ if (!isset($PAGE_TITLE)) {
 //         break;
 // }
 
-if (!$page404) {
+if ($page404) {
+    http_response_code(404);
+} else {
     $include = __DIR__ . _DS . ".." . _DS . "includes" . _DS . "pages" . _DS . "sections" . _DS . $includeFile;
 }
 

@@ -2,10 +2,10 @@
     <div class="max-w-screen-xl mx-auto relative overflow-hidden pt-10">
         <div class="h-2 bg-[#502a29] rounded-full"></div>
         <div class="px-10 text-2xl font-semibold py-3 flex gap-5 items-center">
-            <h2>
+            <h2 class="flex-shrink-0 max-w-full">
                 CE QUE LES GENS DISENT SUR NOUS
             </h2>
-            <div class="h-2 mt-2 bg-[#FFBB00] flex-grow rounded-full"></div>
+            <div class="h-2 min-w-2 mt-2 bg-[#FFBB00] flex-grow rounded-full"></div>
         </div>
         <div class="slide-content1 overflow-hidden rounded-xl mt-3">
             <div class="swiper-wrapper flex">

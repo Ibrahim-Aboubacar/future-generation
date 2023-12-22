@@ -2,9 +2,8 @@
     <div class="max-w-screen-xl mx-auto px-5 pb-5 pt-12">
         <div class="h-2 bg-[#502a29] rounded-full"></div>
         <div class="px-10 text-xl font-semibold py-3 flex gap-5 items-center">
-            <!-- <div class="h-2 mt-2 bg-[#FFBB00] flex-grow rounded-full"></div> -->
-            <h2>À propos du Primaire</h2>
-            <div class="h-2 mt-2 bg-[#FFBB00] flex-grow rounded-full"></div>
+            <h2 class="flex-shrink-0 max-w-full">À propos du Primaire</h2>
+            <div class="h-2 min-w-2 mt-2 bg-[#FFBB00] flex-grow rounded-full"></div>
         </div>
     </div>
 </section>
