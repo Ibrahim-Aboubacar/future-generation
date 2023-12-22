@@ -29,7 +29,7 @@
             </ul>
         </div>
 
-        <div class="col-span-2 md:col-span-3 md:col-span-3_">
+        <div class="col-span-2 md:col-span-3">
             <h4 class="border-l-2 text-gray-200 uppercase border-[#ffbb00] mb-4 py-1 pl-3 text-lg font-bold">
                 Latest post
             </h4>
@@ -37,7 +37,7 @@
                 <?php for ($i = 0; $i < 2; $i++) : ?>
                     <div class="flex px-2 gap-4 mb-2">
                         <div class="w-1/3">
-                            <img class="max-w-full h-full object-contain" src="<?php echo img("elone-musk.jpg") ?>" alt="">
+                            <img class="max-w-full h-full object-contain" src="<?php echo img("elone-musk.jpg") ?>" alt="" data-image-error>
                         </div>
                         <div class="w-8/12 text-xs text-gray-400">
                             <p>
@@ -68,9 +68,11 @@
         <p>Copyright &copy; 2023 <a class="text-gray-300" href="/">Group Scolaire Future Generation</a> - Tous Droits Réservés</p>
         <p>Developed by: <a href="@">Diallo Mamadou Alpha</a> - Contact: +224-628-898-930</p>
     </section>
+    <!-- Div cobaille pout l'indentification des calsse dynamique en utiliser php -->
+    <div calsse="hidden'"></div>
 </footer>
 </body>
-<script src="assets/js/js.js">
+<script src="./assets/js/js.js">
 </script>
 
 </html>

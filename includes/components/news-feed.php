@@ -1,16 +1,23 @@
-<section class="bg-[#502a29]  pb-16 px-5">
-    <div class="max-w-screen-xl mx-auto relative overflow-hidden">
-        <h2 class="text-center uppercase text-2xl font-semibold text-gray-50 py-10 ">WHAT'S NEW AT FUTURE GENERATION</h2>
-        <div class="slide-content overflow-hidden rounded-xl">
-            <div class="swiper-wrapper flex gap-3_">
+<section class="bg-gray-200 pb-16 px-5">
+    <div class="max-w-screen-xl mx-auto relative overflow-hidden pt-10">
+        <div class="h-2 bg-[#502a29] rounded-full"></div>
+        <div class="px-10 text-2xl font-semibold py-3 flex gap-5 items-center">
+            <h2>
+                WHAT'S NEW AT FUTURE GENERATION
+            </h2>
+            <div class="h-2 mt-2 bg-[#FFBB00] flex-grow rounded-full"></div>
+        </div>
+        <!-- <h2 class="text-center uppercase text-2xl font-semibold text-gray-6 00 py-10 ">WHAT'S NEW AT FUTURE GENERATION</h2> -->
+        <div class="slide-content overflow-hidden rounded-xl mt-3">
+            <div class="swiper-wrapper flex">
                 <?php for ($i = 0; $i < 15; $i++) : ?>
 
-                    <div class="card swiper-slide w-[200px]_ bg-gray-50 rounded-xl overflow-hidden">
-                        <div class="image-content relative ">
+                    <div class="card swiper-slide bg-white shadow rounded-xl overflow-hidden">
+                        <div class="image-content relative h-[245px]">
                             <!-- <span class="overlay absolute inset-0 bg-red-900/50 flex justify-center items-center"></span> -->
-                            <span class="absolute bottom-0 left-0 rounded-md m-2 p-2 bg-[#502a29] text-gray-50">Matternelle</span>
-                            <div class="card-image">
-                                <img class="w-full h-full object-cover" src="<?php echo img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img">
+                            <span class="absolute bottom-0 left-0 rounded-md m-2 p-2 bg-[#fb0] text-sm font-semibold text-[#502a29]">Matternelle</span>
+                            <div class="card-image h-full">
+                                <img class="w-full h-full object-cover" src="<?php echo img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img" data-image-error>
                             </div>
                         </div>
 
@@ -25,8 +32,8 @@
                 <?php endfor; ?>
             </div>
         </div>
-        <div class="swiper-button-next hidden lg:block after:content-['next'] -right-10 after:text-[#ffbb00] swiper-navBtn_"></div>
-        <div class="swiper-button-prev hidden lg:block after:content-['prev'] -left-10 after:text-[#ffbb00] swiper-navBtn_"></div>
+        <div class="swiper-button-next hidden lg:block after:content-['next'] -right-10 after:text-[#ffbb00]"></div>
+        <div class="swiper-button-prev hidden lg:block after:content-['prev'] -left-10 after:text-[#ffbb00]"></div>
         <div class="swiper-pagination bottom-[-20px_!important]" style="--swiper-pagination-color: #ffbb00; min-width: 100px"></div>
     </div>
 </section>

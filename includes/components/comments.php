@@ -1,23 +1,27 @@
-<section class="bg-[#502a29]  pb-16 px-5">
-    <div class="max-w-screen-xl mx-auto relative overflow-hidden">
-        <h2 class="text-center uppercase text-2xl font-semibold text-gray-50 py-10 ">
-            Ce que les gens disent sur nous
-        </h2>
-        <div class="slide-content1 overflow-hidden rounded-xl">
-            <div class="swiper-wrapper flex gap-3_">
+<section class="bg-gray-200 pb-16 px-5">
+    <div class="max-w-screen-xl mx-auto relative overflow-hidden pt-10">
+        <div class="h-2 bg-[#502a29] rounded-full"></div>
+        <div class="px-10 text-2xl font-semibold py-3 flex gap-5 items-center">
+            <h2>
+                CE QUE LES GENS DISENT SUR NOUS
+            </h2>
+            <div class="h-2 mt-2 bg-[#FFBB00] flex-grow rounded-full"></div>
+        </div>
+        <div class="slide-content1 overflow-hidden rounded-xl mt-3">
+            <div class="swiper-wrapper flex">
                 <?php for ($i = 0; $i < 6; $i++) : ?>
 
                     <div x-data="{
                         likes: <?php echo rand(1, 150); ?>,
                         liked: <?php echo rand(0, 1) ? 'true' : 'false' ?>
-                    }" class="card swiper-slide bg-gray-50 rounded-xl overflow-hidden">
+                    }" class="card swiper-slide bg-white rounded-xl overflow-hidden">
                         <div class="flex flex-col sm:flex-row p-5">
                             <div class="image-content w-full sm:w-2/5 flex-grow h-full">
                                 <div class="card-image">
-                                    <img class="w-full rounded-md h-full object-cover" src="<?php echo img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img">
+                                    <img class="w-full rounded-md h-full object-cover" src="<?php echo img('Staples_High_School2C_Westport2C_CT.jpg') ?>" alt="" class="card-img" data-image-error>
                                 </div>
                             </div>
-                            <div class="w-full sm:w-3/5 flex flex-col justify-center items-center_ p-5">
+                            <div class="w-full sm:w-3/5 flex flex-col justify-center p-5">
                                 <h2 class="name font-semibold text-lg ">Alber Rojet de la tour</h2>
                                 <p class="text-gray-400 text-sm">Directeur Général Société Cotonnière de Guinée</p>
                                 <hr class="my-2 border-t border-gray-300">
@@ -47,8 +51,8 @@
                 <?php endfor; ?>
             </div>
         </div>
-        <div class="swiper-button-next hidden lg:block after:content-['next'] -right-10 after:text-[#ffbb00] swiper-navBtn_"></div>
-        <div class="swiper-button-prev hidden lg:block after:content-['prev'] -left-10 after:text-[#ffbb00] swiper-navBtn_"></div>
+        <div class="swiper-button-next hidden lg:block after:content-['next'] -right-10 after:text-[#ffbb00]"></div>
+        <div class="swiper-button-prev hidden lg:block after:content-['prev'] -left-10 after:text-[#ffbb00]"></div>
         <div class="swiper-pagination bottom-[-20px_!important]" style="--swiper-pagination-color: #ffbb00; min-width: 100px"></div>
     </div>
 </section>

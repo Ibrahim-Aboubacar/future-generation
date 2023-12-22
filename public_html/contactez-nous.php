@@ -5,8 +5,8 @@ include_once "../includes/header.php";
 
 <!-- HERO SECTION -->
 <section>
-    <div class="relative h-[500px] md:h-[700px]_ z-0 bg-no-repeat bg-cover bg-[90%_80%] md:bg-[100%_70%]" style="background-image: url(<?php echo img("bg-2.jpg") ?>);">
-        <div class="absolute_ h-full inset-0 bg-[#502a29]/70 flex flex-col gap-10 justify-center items-center">
+    <div class="relative h-[500px] z-0 bg-no-repeat bg-cover bg-[90%_80%] md:bg-[100%_70%]" style="background-image: url(<?php echo img("bg-2.jpg") ?>);">
+        <div class="h-full inset-0 bg-[#502a29]/70 flex flex-col gap-10 justify-center items-center">
             <h1 class="text-3xl text-center md:text-5xl text-gray-200 flex justify-center items-center gap-4 drop-shadow-md">
                 <span>Contactez-nous</span>
                 <span class="inline-block w-6 animate-wiggle-y">
@@ -25,9 +25,9 @@ include_once "../includes/header.php";
         <h2 class="text-center w-full py-10 text-gray-700 text-2xl md:text-3xl font-bold">
             Entamons une conversation
         </h2>
-        <div class="flex relative -mt-20_ mb-40_ md:my-0 justify-center flex-col md:flex-row gap-6 items-center">
-            <div id="imgDiv" class="w-full relative -top-5 opacity-10 md:opacity-100 md:[position:unset] bg-red-500_ md:w-1/2 p-3" id="monImage">
-                <img src="<?php echo img("contact-us.svg") ?>" alt="" srcset="">
+        <div class="flex relative md:my-0 justify-center flex-col md:flex-row gap-6 items-center">
+            <div id="imgDiv" class="w-full relative -top-5 opacity-10 md:opacity-100 md:[position:unset] md:w-1/2 p-3" id="monImage">
+                <img src="<?php echo img("contact-us.svg") ?>" alt="" srcset="" data-image-error>
             </div>
             <div id="formDiv" class="w-full md:w-1/2 p-3 absolute top-0 md:[position:unset]">
                 <form action="#" method="post">

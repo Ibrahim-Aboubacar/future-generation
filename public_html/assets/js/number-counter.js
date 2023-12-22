@@ -24,8 +24,6 @@ async function countNumber(el) {
 
     // remplissage du text
     for (let i = 0; i <= text; i++) {
-        // recuperer la lettre active
-        // injecter la letter active dans l'element
         if (i < 10) {
             el.innerHTML = " +00" + "" + i;
         } else if (i < 100) {

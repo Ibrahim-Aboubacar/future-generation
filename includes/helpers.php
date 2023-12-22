@@ -16,15 +16,30 @@ function img(string $path): string
 }
 
 /**
+ * Var Dumps var
+ */
+function dd(...$vars)
+{
+    foreach ($vars as $var) {
+        echo "<pre><br>";
+        var_dump($var);
+        echo "</pre><br>";
+    }
+    die;
+}
+
+/**
  * Generates the full URL for a specific page based on its name.
  *
  * @param string $page_name The name of the page.
+ * @param array $data The data to passe as get url form
  * @return string The complete URL of the page, or "#PAGE_NOT_FOUND" if the page is not found.
  */
-function page(string $page_name): string
+function page(string $page_name, array $data = []): string
 {
     if (!isset(PAGES[$page_name])) return "#PAGE_NOT_FOUND";
-    return SITE_BASE . PAGES[$page_name];
+
+    return SITE_BASE . PAGES[$page_name] . arrayToGetUrl($data);
 }
 
 /**
@@ -62,4 +77,34 @@ function stars(int $nbr = 1): string
     }
 
     return $html;
+}
+
+
+/**
+ * Génère une chaîne de requête GET URL à partir d'un tableau associatif.
+ *
+ * @param array $data Le tableau associatif contenant les données à inclure dans la chaîne de requête.
+ *
+ * @return string La chaîne de requête GET URL générée.
+ */
+function arrayToGetUrl(array $data = []): string
+{
+    // Vérifie si le tableau est vide
+    if (empty($data)) {
+        return '?';
+    }
+
+    // Initialise un tableau pour stocker les éléments de la chaîne de requête
+    $queryParams = [];
+
+    // Parcourt le tableau et ajoute chaque paire clé-valeur à $queryParams
+    foreach ($data as $key => $value) {
+        $queryParams[] = "$key=" . urlencode($value);
+    }
+
+    // Construit la chaîne de requête en joignant les éléments avec "&"
+    $queryString = implode('&', $queryParams);
+
+    // Retourne la chaîne de requête avec le préfixe "?"
+    return "?" . $queryString;
 }

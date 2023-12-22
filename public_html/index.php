@@ -6,7 +6,7 @@ include_once "../includes/header.php";
 
 <section class="relative">
     <div class="relative h-[830px] md:h-screen z-0 bg-no-repeat bg-cover bg-[15%] md:bg-center" style="background-image: url(<?php echo img("bg-cover.jpg") ?>);">
-        <div class="absolute_ h-full inset-0 bg-[#502a29]/70 flex flex-col gap-10 justify-center items-center">
+        <div class="h-full inset-0 bg-[#502a29]/70 flex flex-col gap-10 justify-center items-center">
             <h1 class="text-xl text-center md:text-3xl text-gray-200 drop-shadow-md">Bienvenue au complexe scolaire <br>
                 <span class="text-4xl md:text-6xl font-semibold text-[#ffbb00] mt-3">Future Génération</span>
             </h1>
@@ -73,13 +73,16 @@ include_once "../includes/header.php";
 </section>
 
 <section class="py-40 bg-no-repeat bg-cover " style="background-image: url(<?php echo img("bg-1.jpg") ?>);">
-    <div class="max-w-screen-xl mx-auto px-5 md:flex" id="section_welcome">
-        <div class="w-full md:w-1/2 overflow-hidden flex flex-col justify-center rounded-md" id="div_image_buil">
-            <img src="<?php echo img("Staples_High_School2C_Westport2C_CT.jpg") ?>" alt="" id="b_img">
+    <div class="max-w-screen-xl mx-auto px-5 lg:flex" id="section_welcome">
+        <div class="w-full lg:w-1/2 overflow-hidden flex flex-col justify-center rounded-md" id="div_image_buil">
+            <img src="<?php echo img("Staples_High_School2C_Westport2C_CT.jpg") ?>" alt="" id="b_img" data-image-error>
         </div>
-        <div class="w-full md:w-1/2 md:px-5 flex flex-col justify-center text-gray-800" id="div_image_buil_info">
-            <h2 class="my-4 font-semibold text-2xl" id="complex_h2">COMPLEX SCOLAIRE <br>
-                FUTURE GENERATION</h2>
+        <div class="w-full lg:w-1/2 md:px-5 flex flex-col justify-center text-gray-800" id="div_image_buil_info">
+            <h2 class="my-4 font-semibold text-2xl" id="complex_h2">
+                COMPLEX SCOLAIRE
+                <br>
+                FUTURE GENERATION
+            </h2>
             <p class="text-lg" id="complex_p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores porro natus alias aliquid, atque aspernatur sed
@@ -97,15 +100,55 @@ include_once "../includes/header.php";
     </div>
 </section>
 
+<section class="py-10">
+    <div class="max-w-screen-xl mx-auto px-5 flex flex-col-reverse lg:flex-row gap-5">
+        <div class="w-full lg:w-1/2 ">
+            <div class="flex flex-col justify-center items-center w-full h-full">
+                <div class="w-full">
+                    <h2 class="text-[#502a29] text-lg font-semibold underline mb-2">Pour quoi nous ?</h2>
+                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sunt? Esse, iste blanditiis id laudantium magni dignissimos cumque eius quibusdam ut! Dicta, beatae eius quasi molestiae ad accusantium nihil ipsam?</p>
+                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsa cumque laboriosam blanditiis et. Ut assumenda, excepturi temporibus nisi, amet debitis necessitatibus facere voluptatibus, maxime dolores eveniet labore consectetur mollitia.</p>
+                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sunt? Esse, iste blanditiis id laudantium magni dignissimos cumque eius quibusdam ut! Dicta, beatae eius quasi molestiae ad accusantium nihil ipsam?</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 ">
+            <div class="flex flex-col justify-center items-center w-full h-full overflow-hidden rounded-md">
+                <img src="<?php echo img("img-4.jpg") ?>" class="w-full" alt="" data-image-error>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-10">
+    <div class="max-w-screen-xl mx-auto px-5 flex flex-col lg:flex-row gap-5">
+        <div class="w-full lg:w-1/2 ">
+            <div class="flex flex-col justify-center items-center w-full h-full overflow-hidden rounded-md">
+                <img src="<?php echo img("img-3.jpg") ?>" class="w-full" alt="" data-image-error>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 ">
+            <div class="flex flex-col justify-center items-center w-full h-full">
+                <div class="w-full">
+                    <h2 class="text-[#502a29] text-lg font-semibold underline mb-2">Nos Objectifs</h2>
+                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sunt? Esse, iste blanditiis id laudantium magni dignissimos cumque eius quibusdam ut! Dicta, beatae eius quasi molestiae ad accusantium nihil ipsam?</p>
+                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsa cumque laboriosam blanditiis et. Ut assumenda, excepturi temporibus nisi, amet debitis necessitatibus facere voluptatibus, maxime dolores eveniet labore consectetur mollitia.</p>
+                    <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sunt? Esse, iste blanditiis id laudantium magni dignissimos cumque eius quibusdam ut! Dicta, beatae eius quasi molestiae ad accusantium nihil ipsam?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- START- NEWS FEED -->
-<?php include "../includes/components/news-feed.php"; ?>
+<?php include "../includes/components/news-feed.php";
+?>
 <!-- END- NEWS FEED -->
 
-<hr class="border-t-2 border-gray-50">
 
-<!-- START- FIND US -->
+<!-- START- Comments -->
 <?php include "../includes/components/comments.php"; ?>
-<!-- END- FIND US -->
+<!-- END- Comments -->
 
 <!-- START- FIND US -->
 <?php include "../includes/components/find-us.php"; ?>
