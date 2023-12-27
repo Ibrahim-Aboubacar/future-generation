@@ -34,7 +34,7 @@ include_once "../includes/header.php";
                     </span>
                     <span class="text-center text-gray-500 font-semibold text-xl">Éleves</span>
                 </p>
-                <p class="text-center count-number font-bold text-4xl" data-speed="10">1000</p>
+                <p class="text-center count-number font-bold text-4xl" data-speed="2">500</p>
             </div>
 
             <!-- Enseignants -->

@@ -18,32 +18,6 @@ foreach ($SUB_PAGES as $name => $title) {
 if (!isset($PAGE_TITLE)) {
     $page404 = true;
 }
-// switch ($SUB_PAGE_NAME) {
-//     case "primary":
-//         $includeFile = "primary.php";
-//         break;
-//     case "college":
-//         $includeFile = "college.php";
-//         break;
-//     case "lycee":
-//         $includeFile = "lycee.php";
-//         break;
-//     case "parascoloaire":
-//         $includeFile = "parascoloaire.php";
-//         break;
-//     case "it-courses":
-//         $includeFile = "it-courses.php";
-//         break;
-//     case "english-classes":
-//         $includeFile = "english-classes.php";
-//         break;
-//     case "revision":
-//         $includeFile = "revision.php";
-//         break;
-//     default:
-//         $page404 = true;
-//         break;
-// }
 
 if ($page404) {
     http_response_code(404);

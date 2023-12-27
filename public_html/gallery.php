@@ -6,7 +6,7 @@ $imagesFromSite = [
     "bg-1.jpg",
     "bg-2.jpg",
     "bg-3.jpg",
-    "bg-cover.jpg",
+    "bg-cover0.jpg",
     "elone-musk.jpg",
     "Staples_High_School2C_Westport2C_CT.jpg",
     "img-1.jpg",

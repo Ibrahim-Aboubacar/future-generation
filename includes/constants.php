@@ -39,12 +39,3 @@ define("SUB_PAGES", [
         "revision" => "Revision",
     ]
 ]);
-
-define("LANG", [
-    "FR" => [
-        "TEXT-INTO" => "Bienvenue au complexe scolaire "
-    ],
-    "EN" => [
-        "TEXT-INTO" => "wELCON"
-    ]
-]);
